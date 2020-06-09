@@ -1,6 +1,6 @@
 backend:
   name: github
-  repo: slashpinetech/DirectLifeServices
+  repo: mrillstone/DirectLifeServices
 
 media_folder: content/assets
 public_folder: ../assets
