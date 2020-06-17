@@ -5,7 +5,7 @@ import Layout from "../components/layout"
 // import SEO from "../components/seo"
 import Button from "../components/button"
 
-class IndexPage extends React.Component {
+class NewToMedicare extends React.Component {
   render() {
     const siteTitle = ""
 
@@ -16,7 +16,7 @@ class IndexPage extends React.Component {
           keywords={[`blog`, `gatsby`, `javascript`, `react`]}
         /> */}
         <img style={{ margin: 0 }} src="./logo.png" alt="Direct Life Services" />
-        <h3 style={{ margin: 0 , paddingLeft: "30%" }}>Full site coming soon</h3>
+        <h3 style={{ margin: 0 , paddingLeft: "30%" }}>Full site coming soon test</h3>
         
         <Link to="/blog/">
           <Button marginTop="35px" style={{marginLeft: `auto`, marginRight: `auto`}}>Enter Site</Button>
@@ -26,4 +26,4 @@ class IndexPage extends React.Component {
   }
 }
 
-export default IndexPage
+export default NewToMedicare

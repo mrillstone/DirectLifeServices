@@ -6,6 +6,7 @@ media_folder: content/assets
 public_folder: ../assets
 
 collections:
+  # Folder Type
   - name: blog
     label: Blog
     folder: content/blog
@@ -16,3 +17,20 @@ collections:
       - { name: title, label: Title }
       - { name: description, label: Description }
       - { name: body, label: Body, widget: markdown }
+
+
+  -name: 
+
+  # File Type
+  - name: newToMedicare
+    label: NewToMedicare
+    create: true
+    files: 
+      - label: "Test File Page" 
+        name: "test file page"
+        file: "content/Test.md"
+        fields:
+          - { name: date, label: Date, widget: date }
+          - { name: title, label: Title }
+          - { name: body, label: Body, widget: markdown }
+          - { name: image, label: Image, widget: image }

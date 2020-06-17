@@ -1,8 +1,12 @@
 import React from "react"
 import { Link } from "gatsby"
+import "./layout.css"
 import styled from "styled-components"
+import Nav from "./nav"
 
 import { rhythm, scale } from "../utils/typography"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faFacebookSquare } from "@fortawesome/free-brands-svg-icons"
 
 class Layout extends React.Component {
   render() {
@@ -55,6 +59,10 @@ class Layout extends React.Component {
     }
     return (
       <Wrapper>
+        <header>
+            {/* {header} */}
+            <Nav />
+          </header>
         <div
           style={{
             marginLeft: `auto`,
@@ -63,13 +71,21 @@ class Layout extends React.Component {
             padding: `${rhythm(1.5)} ${rhythm(3 / 4)}`,
           }}
         >
-          <header>{header}</header>
-          <main>{children}</main>
+          <main style={{
+            paddingTop: "10rem", 
+            paddingBottom: "10rem"
+            }}
+          >
+            {children}
+          </main>
         </div>
         <Footer>
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.org">Gatsby</a>
+          <div style={{float: `left`, fontSize: "15px", marginTop: "35px"}}>
+            © {new Date().getFullYear()} Direct Life Services All Rights Reserved
+          </div>
+          <div style={{float: `right`}}>
+            <a style={{color: `black`, boxShadow: `none`, fontSize: "50px"}} href="https://www.facebook.com/Directlifeservices"><FontAwesomeIcon icon={faFacebookSquare} /></a>
+          </div>
         </Footer>
       </Wrapper>
     )
